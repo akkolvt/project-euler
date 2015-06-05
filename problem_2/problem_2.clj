@@ -1,3 +1,5 @@
+(ns project-euler.problem_2)
+
 (def fib-sequence
   (lazy-cat [0 1] (map +
                        (rest fib-sequence)

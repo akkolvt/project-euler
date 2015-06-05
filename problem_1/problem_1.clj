@@ -1,3 +1,5 @@
+(ns project-euler.problem_1)
+
 (println
   (reduce +
           (for [x (range 1000)
