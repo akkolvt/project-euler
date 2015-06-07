@@ -1,6 +1,7 @@
 NUM = 600851475143
 
 def prime?(num)
+  return true if [1, 2].include?(num)
   return false if num.even?
 
   n = Math.sqrt(num).ceil
