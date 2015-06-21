@@ -37,8 +37,6 @@
       n
       (find-next-prime-factor x n))))
 
-(find-next-prime-factor (long number) 3)
-
 (defn- find-largest-prime-factor
   [x p]
   (let [n (find-next-prime-factor x p)]
