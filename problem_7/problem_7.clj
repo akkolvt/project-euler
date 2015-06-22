@@ -1,5 +1,6 @@
-(ns project-euler.problem_5)
+(ns project-euler.problem_7)
 
+;;Решение в лоб
 (defn- any-divisors?
   [x n]
   (if (= n 1)
@@ -19,3 +20,12 @@
             (= x 1))
       false
       (not (any-divisors? x n)))))
+
+(defn find-nth-prime
+  [n]
+  (last (take n (filter prime? (iterate inc 1)))))
+
+(prn (find-nth-prime 10001))
+
+;;Решето Эратосфена
+
